@@ -10,4 +10,14 @@ const testObject = {
     num1: 123,
     str1: "C",
     }
-}    
+}
+
+console.log(testObject.num1)
+console.log(testObject.num2)
+console.log(testObject.str1)
+console.log(testObject.str2)
+console.log(testObject.bool)
+console.log(testObject.test1)
+console.log(testObject.test2)
+console.log(testObject.nestObject.num1)
+console.log(testObject.nestObject.str1)
