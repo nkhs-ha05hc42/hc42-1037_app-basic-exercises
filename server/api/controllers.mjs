@@ -1,5 +1,6 @@
 export * from "./sample1/controller.mjs"
-const postSample1 = (req, res) => {
+export * from "./sample2/controller.mjs"
+/*const postSample1 = (req, res) => {
     console.log(req.body)
     res.send(JSON.stringify({ status: "success" }))
 }
@@ -217,4 +218,4 @@ export const sample1Controller = {
     deleteSample3,
     getFruits,
     getFruitByName,
-}
+}*/

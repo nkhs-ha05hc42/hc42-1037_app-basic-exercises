@@ -1,6 +1,7 @@
 import express from "express"
 import path from "path"
 import { sample1Controller } from "./api/controllers.mjs"
+import { sample2Controller } from "./api/sample2/controller.mjs"
 
 const routers = express.Router()
 
@@ -18,6 +19,7 @@ routers.put("/api/8-2", sample1Controller.putSample3)
 routers.delete("/api/8-2", sample1Controller.deleteSample3)
 routers.get("/api/8-3", sample1Controller.getFruits)
 routers.get("/api/8-3/:name", sample1Controller.getFruitByName)
+routers.post("/api/sample2", sample2Controller.postSample2)
 
 // client配下は、ブラウザサイドで実行されるファイル（HTML/JS/CSS/画像など）を配置する
 routers.use(express.static(`${path.resolve()}/client`))
